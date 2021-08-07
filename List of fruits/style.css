@@ -1,0 +1,34 @@
+* {
+    font-family: sans-serif;
+}
+
+ol {
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(243, 170, 170);
+    list-style-type:none;
+    color:white;
+}
+
+li {
+    padding: 10px;
+    margin: 15px;
+    background-color: rgb(238, 104, 104);
+    counter-increment: li
+  }
+
+li::before{
+    margin: 5px;
+    content: counter(li)'.'; 
+    color: white;
+  }
+
+  /* li {counter-increment: li} */
+
+li span {
+      background-color: indianred;
+      margin: 7px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
