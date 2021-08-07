@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;  
+    font-family: sans-serif;
+}
+
+body {
+    padding: 30px 200px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* ul {
+    list-style-type:none;
+} */
+
+ul {
+    list-style-image: url(img/unchecked_16.png); /* Путь к изображению маркера */
+    list-style-position: inside;
+}
+
+li {
+    /* margin: 30px; */
+    padding: 10px;
+    padding-left: 50px;
+}
+
+li::after {
+    color: rgba(255, 0, 0, 0.589);
+    font-size: 25px;
+    content: "×";
+  }
+
+li span {
+    margin: 20px;
+}
+
+li:nth-child(even) {
+    background-color: rgba(71, 186, 224, 0.678);
+}
+
+li:nth-child(odd) {
+    background-color: rgba(66, 169, 204, 0.678);
+}
+
+li:nth-child(2),  li:nth-child(5), li:nth-child(11){
+    background-color: rgb(219, 219, 219);
+    list-style-image: url(img/checked_16.png);
+    text-decoration: line-through;
+}
